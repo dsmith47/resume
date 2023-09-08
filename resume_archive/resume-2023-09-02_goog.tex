@@ -1,0 +1,145 @@
+\documentclass[letterpaper,11pt]{article}
+
+
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+% Adjust margins
+\usepackage[top=0.5in,left=0.5in,right=0.5in,bottom=0.5in]{geometry}
+% Select Font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Custom Format abstractions
+%% Resume Sections
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%% Resume Subsection
+\newcommand{\resumeSubSectionStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubSectionEnd}{\end{itemize}}
+
+%% Resume Job Definitions
+%%% Comapny name, location, title, and date worked
+\newcommand{\resumeCompanyRoleHeading}[4]{
+    \vspace{-2pt}\item
+      \textbf{#1} \hfill #2 \\
+      \textit{\small #3} \hfill \textit{\small #4}
+    \vspace{-11pt}
+}
+%%% Renames company listing to University, for education
+\newcommand{\resumeUniversityHeading}{\resumeCompanyRoleHeading}
+
+%%% title and date worked
+%%% used for multiple roles within one company
+\newcommand{\resumeRoleHeading}[2]{
+    \vspace{-7pt}\item
+    \textit{\small #1} \hfill \textit{\small #2}
+    \vspace{-11pt}
+}
+\newcommand{\resumeResearchUniversityHeading}[1]{
+    \vspace{-2pt}\item
+      \textbf{#1}
+    \vspace{-7pt}
+}
+
+%%% title and date worked
+%%% used to outline project and timed studied
+\newcommand{\resumeResearchHeading}[2]{
+    \vspace{-4pt}\item
+    \textit{#1} \hfill \textit{\small #2}
+    \vspace{-11pt}
+}
+
+%% Resume bullet customization
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+%% Formatted Lists of Skills
+\newcommand{\resumeSkillList}[2]{
+    \item
+    \textbf{#1:} \small{#2} \\
+}
+
+
+
+\begin{document}
+\pagenumbering{gobble}
+
+% Heading w/ name -------------------------------------
+\centerline{\Huge\textbf{Douglas J. Smith}}
+\centerline{
+    Email: dougjs@proton.me 
+    $|$  LinkedIn: www.linkedin.com/in/dsmith47
+    $|$ GitHub: https://github.com/dsmith47
+    % TODO: get a stable hosted website
+    % $|$  Website: \url{a}
+}
+
+% Work Experience -------------------------------------
+\section{Work Experience}
+\resumeSubSectionStart
+    %% Google ----------------------------------------------------
+    \resumeCompanyRoleHeading{Google}{Seattle, WA}{Software Engineer II, Cloud Billing}{July 2019 - April 2023}
+    \resumeItemListStart
+        \resumeItem{Improved billing UX with 24x more granular cost detail (hour-level detail instead of day-level) by processing large amounts of data at low latency via batch-processing pipelines written in Java}
+        \resumeItem{Achieved 30x throughput increase by designing and implementing the necessary queuing systems and priority heuristics to further parallelize processing without decreasing latency}
+        \resumeItem{Implemented custom monitoring systems for all processing to ensure data correctness}
+        \resumeItem{Increased product uptime by participating in oncall pager rotation with 24/7 issue response SLA}
+        \resumeItem{Reduced oncall workload by leading initiative to document and automate high-toil processes}
+    \resumeItemListEnd
+    \resumeRoleHeading{Software Engineering Intern, Cloud Kubernetes}{May 2018 - August 2018}
+    \resumeItemListStart
+        \resumeItem{Reduced barriers to launch and operate Kubernetes clusters on GCP by extending console-emulation frontend to support product-specific commands}
+        \resumeItem{Increased frontend usability by improving frontend documentation and authorization workflow}
+    \resumeItemListEnd
+    \resumeRoleHeading{Engineering Practicum Intern, AdSense}{May 2017 - August 2017}
+    \resumeItemListStart
+        \resumeItem{Performed analysis of counterfactual tests for Google AdSense algorithms by implementing a system for comparison of experiments as a C++ post-processing pipeline}
+        \resumeItem{Increased clarity of counterfactual testing results by developing an Angular2 web application to accept user field queries and display data in graphical format}
+    \resumeItemListEnd
+    %% Viakoo -----------------------------------------------
+    \resumeCompanyRoleHeading{Viakoo}{Mountain View, CA}{Machine Learning Intern}{January 2018 - May 2018}
+    \resumeItemListStart
+        \resumeItem{Added universal computer-vision-based insights (e.g. anomaly detection) to universal device-management system by developing a system for converting images gathered from security cameras to TensorFlow data structures}
+        \resumeItem{Increased coverage of universal device processing application by implementing general support for http-based camera devices and implementing driver for a web-based security camera brand}
+    \resumeItemListEnd
+    %% Crcl -------------------------------------------------
+    \resumeCompanyRoleHeading{Crcl}{Notre Dame, IN}{Project Manager and Developer, Android and Web Teams}{August 2016 - January 2018}
+    \resumeItemListStart
+        \resumeItem{Contributed to common UX specification for a venue-reviewing social media application by participating in graphic design and usability brainstorming sessions}
+        \resumeItem{Implemented specified UX as Android application in Java}
+        \resumeItem{Increased available SWE hours and supported web development by assisting in technical reviews and contributing coding work to achieve critical deadlines}
+    \resumeItemListEnd
+    %% ND Department of Film, Television, and Theatre -----------------------------------------------
+    \resumeCompanyRoleHeading{ND Department of Film, Television, and Theatre}{Notre Dame, IN}{Datadase Admin/Teaching Assistant}{August 2016 - May 2017}
+    \resumeItemListStart
+        \resumeItem{Managed student work scheduling for Theatre department by implementing a scheduling application using PHP and PostgreSQL}
+        \resumeItem{Provided Platform-as-service management for application on Heroku and migrated to hosting company infrastructure for increased flexibility}
+    \resumeItemListEnd
+\resumeSubSectionEnd
+
+\section{Education}
+\resumeSubSectionStart
+\resumeUniversityHeading{University of Notre Dame}{Notre Dame, IN}{Bachelors of Science and Engineering}{August 2015 - May 2019}
+\resumeSubSectionEnd
+
+\section{Research}
+\resumeSubSectionStart
+\resumeResearchUniversityHeading{University of Notre Dame}
+\resumeResearchHeading{Computational Creativity}{August 2018 - May 2019}
+\resumeItemListStart
+    \resumeItem{Researching techniques for AI interactions with music by constructing an AI system capable of training on audio files and producing novel outputs}
+\resumeItemListEnd
+
+\resumeSubSectionEnd
+
+\section{Skills}
+    {\footnotesize Java, Python, GoLang, C/C++, JavaScript/TypeScript, Distributed Computing/Cloud Computing, Machine Learning/AI, API Design, Object Oriented Programming, Functional Programming, Version Control (Git, Mercurial, Perforce), Amazon Web Services (AWS), Google Cloud Product (GCP), Agile Development, Test Driven Development, Documentation}
+\end{document}
