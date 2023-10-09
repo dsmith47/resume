@@ -9,9 +9,6 @@
 % Select Font
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-% Configure custom colors
-\usepackage{xcolor}
-\definecolor{impact-color}{HTML}{199900}
 
 % Custom Format abstractions
 %% Resume Sections
@@ -85,32 +82,6 @@
      \\ \textbf{GitHub:} https://github.com/dsmith47}
 \end{tabular}
 
-%% Heading w/ name in colored text  ------------------
-% {\color{impact-color}
-% \begin{tabular}{l  l}
-% {\Huge\textbf{Douglas J. Smith}}
-%   & \makecell[l]{
-%      \textbf{Email:} dougjs@proton.me 
-%      \\ \textbf{Website:} https://dsmith47.github.io/defragment-memory-hugo/
-%      \\ \textbf{LinkedIn:} https://www.linkedin.com/in/dsmith47
-%      \\ \textbf{GitHub:} https://github.com/dsmith47}
-% \end{tabular}
-% }
-
-%% Heading w/ name in colored highlight -------------------
-% \colorbox{impact-color}{
-% {\color{white}
-% \begin{tabular}{l  l}
-% {\Huge\textbf{Douglas J. Smith}} 
-%   & \makecell[l]{
-%      \textbf{Email:} dougjs@proton.me 
-%      \\ \textbf{Website:} https://dsmith47.github.io/defragment-memory-hugo/
-%      \\ \textbf{LinkedIn:} https://www.linkedin.com/in/dsmith47
-%      \\ \textbf{GitHub:} https://github.com/dsmith47}
-% \end{tabular}
-% }
-% }
-
 % Work Experience -------------------------------------
 \section{Work Experience}
 \resumeSubSectionStart
@@ -119,7 +90,7 @@
     \resumeItemListStart
         \resumeItem{Modernizing internal data transfer by implementing API presenting new data models with technical support for existing mainframe storage as well as migration support for new storage systems}
         \resumeItem{Modeling data for new internal APIs by mapping legacy data models to planned business use cases}
-        \resumeItem{Maintaining product security and reliability by participating in regular vulnerability remediation work and production support pager rotations}
+        \resumeItem{Maintaining product security/reliability via regular vulnerability remediation and production support rotations}
     \resumeItemListEnd
     %% Google ----------------------------------------------------
     \resumeCompanyRoleHeading{Google}{Seattle, WA}{Software Engineer II, Cloud Billing}{July 2019 - April 2023}
@@ -153,29 +124,6 @@
         \resumeItem{Implemented specified UX as Android application in Java interacting with REST API}
         \resumeItem{Increased available SWE hours and supported web development by assisting in technical reviews and contributing coding work to achieve critical deadlines}
     \resumeItemListEnd
-    %% ND Department of Film, Television, and Theatre -----------------------------------------------
-    \resumeCompanyRoleHeading{ND Department of Film, Television, and Theatre}{Notre Dame, IN}{Datadase Admin/Teaching Assistant}{August 2016 - May 2017}
-    \resumeItemListStart
-        \resumeItem{Managed student work scheduling for Theatre department by implementing a scheduling application using PHP and PostgreSQL}
-        \resumeItem{Provided Platform-as-service management for application on Heroku and migrated to hosting company infrastructure for increased flexibility}
-    \resumeItemListEnd
-    %% Mercatus -------------------------------------------------
-    \resumeCompanyRoleHeading{Mercatus}{San Mateo, CA}{Software Intern}{February 2016 - March 2016}
-    \resumeItemListStart
-        \resumeItem{Automated production of Excel spreadsheets and PowerPoint Presentations summarizing data from corporate tools (including GoodData, Jira, and ZenDesk) with python scripting}
-    \resumeItemListEnd
-    %% Promazo -------------------------------------------------
-    \resumeCompanyRoleHeading{Promazo}{Notre Dame, IN}{Web Developer}{March 2016 - August 2016}
-    \resumeItemListStart
-        \resumeItem{Maintained 1.0 version of job-matching sites for college students}
-        \resumeItem{Implemented 2.0 version of company website using Django REST API serving AngularJS application}
-    \resumeItemListEnd
-    %% 11trees -------------------------------------------------
-    \resumeCompanyRoleHeading{11trees}{Remote}{Software Developer}{April 2015 - January 2017}
-    \resumeItemListStart
-        \resumeItem{Designed tool for extending copy/paste functionality for Google Chrome users by leveraging Chrome Extension Framework and Context Menu API}
-        \resumeItem{Implemented user-specific configurations for functionality by using Chrome Extension state transfer API}
-    \resumeItemListEnd
     
 \resumeSubSectionEnd
 
@@ -186,21 +134,6 @@
 
 \section{Research}
 \resumeSubSectionStart
-\resumeResearchUniversityHeading{University of Notre Dame}
-\resumeResearchHeading{Operating Systems}{August 2018 - May 2019}
-\resumeItemListStart
-    \resumeItem{Writing code and documentation to implement UNIX-like inode interface for a simplified operating system used in teaching Operating Systems principles}
-\resumeItemListEnd
-\resumeResearchHeading{Computational Creativity}{August 2018 - May 2019}
-\resumeItemListStart
-    \resumeItem{Researching techniques for AI interactions with music by constructing an AI system capable of training on audio files and producing novel outputs}
-\resumeItemListEnd
-\resumeResearchHeading{Human-Computer Interaction}{September 2016 - December 2017}
-\resumeItemListStart
-    \resumeItem{Implemented tooling for monitoring user and their environment simultaneously by implementing iOS application for manipulating two cameras simultaneously using Swift}
-    \resumeItem{Automated creation of D3-readable JSON structures from survey data via python script}
-\resumeItemListEnd
-
 \resumeResearchUniversityHeading{National Tsing Hua University}
 \resumeResearchHeading{Embedded Systems Research}{May 2016 - August 2016}
 \resumeItemListStart
@@ -209,12 +142,10 @@
 \resumeItemListEnd
 \resumeSubSectionEnd
 
+
 \section{Skills}
 \resumeSubSectionStart
-    \resumeSkillList{Languages}{Java, Python, GoLang, C/C++, JavaScript/TypeScript}
-    \resumeSkillList{Concepts}{Distributed Computing/Cloud Computing, Machine Learning/AI, API Design, Object Oriented Programming, Functional Programming}
-    \resumeSkillList{Programming Tools}{Bash Scripting, Version Control (Git, Mercurial, Perforce), Amazon Web Services (AWS), Google Cloud Product (GCP)}
-    \resumeSkillList{Team Skills}{Agile Development, Test Driven Development, Documentation}
+    {\footnotesize Java, Python, GoLang, C/C++, JavaScript/TypeScript, Distributed Computing/Cloud Computing, Machine Learning/AI, API Design, Object Oriented Programming, Functional Programming, Bash Scripting, Version Control (Git, Mercurial, Perforce), Amazon Web Services (AWS), Google Cloud Product (GCP), Agile Development, Test Driven Development, Documentation}
 \resumeSubSectionEnd
 
 \end{document}
